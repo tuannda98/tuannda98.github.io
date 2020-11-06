@@ -510,23 +510,25 @@
                         <div class="col-md-12">
                           <h2 class="title-uppercase">Gửi cho tôi</h2>
                           <div class="contact-info">
-                            <form class="js-form" novalidate="novalidate">
-                              <div class="row">
-                                <div class="form-group col-sm-6">
-                                  <input type="text" name="name" required="" placeholder="Name*" aria-required="true">
-                                </div>
-                                <div class="form-group col-sm-6">
-                                  <input type="email" name="email" placeholder="Email">
-                                </div>
-                                <div class="form-group col-sm-12">
-                                  <input type="text" name="subject" placeholder="Subject (Optinal)">
-                                </div>
-                                <div class="form-group col-sm-12">
-                                  <textarea name="message" required="" placeholder="Message*" aria-required="true"></textarea>
-                                </div>
-                                <div class="col-sm-12"><button type="submit" class="btn">Post Comment</button></div>
-                              </div>
-                            </form>
+                            <form name="contact-form">
+    <div class="BsdCntct">
+        <input class="validate" id="ContactForm1_contact-form-name" name="name" required="" type="text" value="" /> <span class="lightbsd"></span> <span class="barbsd"></span> <label><i class="fa fa-user"></i> Tên của bạn</label>
+    </div>
+    <div class="BsdCntct">
+        <input class="validate" id="ContactForm1_contact-form-email" name="email" required="" type="email" value="" /> <span class="lightbsd"></span> <span class="barbsd"></span> <label><i class="fa fa-envelope"></i> Email của bạn</label>
+    </div>
+    <div class="BsdCntct">
+        <textarea class="validate" cols="25" id="ContactForm1_contact-form-email-message" name="email-message" required="" rows="5"></textarea> <span class="lightbsd"></span> <span class="barbsd"></span>
+        <label><i class="fa fa-comment"></i> Tin nhắn</label>
+    </div>
+    <input id="ContactForm1_contact-form-submit" type="button" value="" /> <input id="ContactForm1_contact-form-reset" type="reset" value="" /> <br />
+    <div id="ContactForm1_contact-form-error-message"></div>
+    <div id="ContactForm1_contact-form-success-message"></div>
+</form>
+<script src="https://www.blogger.com/static/v1/widgets/199156504-widgets.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //<![CDATA[ if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) {     window['blogger_templates_experiment_id'] = "templatesV1";     window['blogger_blog_id'] = '2159820165862782104';     BLOG_attachCsiOnload(''); } _WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2159820165862782104', document.location.origin , '2159820165862782104'); _WidgetManager._RegisterWidget('_ContactFormView', new _WidgetInfo('ContactForm1', 'footer1', null, document.getElementById('ContactForm1'), {     'contactFormMessageSendingMsg': 'Đang gửi...',     'contactFormMessageSentMsg': 'Tin nhắn của bạn đã được gửi.',     'contactFormMessageNotSentMsg': 'Không thể gửi tin nhắn. Vui lòng thử lại sau.',     'contactFormInvalidEmailMsg': 'Nhập địa chỉ email hợp lệ.',     'contactFormEmptyMessageMsg': 'Trường thông báo không được để trống.',     'title': 'Contact Form',     'blogId': '3276171912859713622',     'contactFormNameMsg': 'Tên của bạn',     'contactFormEmailMsg': 'Email của bạn',     'contactFormMessageMsg': 'Tin nhắn',     'contactFormSendMsg': 'Gửi',     'submitUrl': 'https://www.blogger.com/contact-form.do' }, 'displayModeFull')); //]]>
+</script>
                           </div>
                         </div>
                       </div>
